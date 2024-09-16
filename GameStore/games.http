@@ -1,0 +1,33 @@
+﻿GET http://localhost:5143/games
+
+###
+
+GET http://localhost:5143/games/3
+
+###
+
+POST http://localhost:5143/games
+Content-Type: application/json
+
+{
+    "name": "Red Dead Redemption 4",
+    "genreId": 2,
+    "price": 100.00,
+    "releaseDate": "2013-01-01"
+}
+
+###
+
+PUT http://localhost:5143/games/3
+Content-Type: application/json
+
+  {
+    "name": "Red Dead Redemption PC edition",
+    "genreId": 3,
+    "price": 50.00,
+    "releaseDate": "2013-01-01"
+  }
+  
+###
+
+DELETE http://localhost:5143/games/3
